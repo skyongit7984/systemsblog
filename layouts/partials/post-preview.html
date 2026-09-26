@@ -1,0 +1,56 @@
+<article class="post-card">
+
+    <div class="post-card-titlebar">
+        <div class="window-controls">
+            <span></span>
+            <span></span>
+        </div>
+
+        <span class="post-card-title">
+            {{ .Title }}
+        </span>
+    </div>
+
+    <div class="post-card-body">
+
+        <div class="post-card-meta">
+
+            <span>
+                {{ .Date.Format "02.01.2006" }}
+            </span>
+
+            {{ with .Params.categories }}
+
+                <span class="meta-divider">•</span>
+
+                {{ range . }}
+                    <a href="{{ "/categories/" | relURL }}{{ . | urlize }}/">
+                        {{ . }}
+                    </a>
+                {{ end }}
+
+            {{ end }}
+
+        </div>
+
+        <div class="post-card-content">
+
+            {{ with .Params.description }}
+
+                <p>{{ . }}</p>
+
+            {{ else }}
+
+                <p>{{ .Summary }}</p>
+
+            {{ end }}
+
+        </div>
+
+        <a class="post-card-link" href="{{ .RelPermalink }}">
+            Read full post →
+        </a>
+
+    </div>
+
+</article>

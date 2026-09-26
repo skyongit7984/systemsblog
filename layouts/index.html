@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div class="page-header">
+
+    <h1>Welcome to the Lavalamp System's blog &lt;3 </h1>
+
+    <p>
+        This blog serves as a diary and guide to plurality. We hope this is helpful for other plural folks out there.
+    </p>
+
+</div>
+
+<section class="latest-posts">
+
+    <div class="section-header">
+        <h2>New posts</h2>
+
+        <a href="/blog/">
+            All posts →
+        </a>
+    </div>
+
+    <div class="post-feed">
+
+        {{ $posts := where site.RegularPages "Type" "post" }}
+
+        {{ range first 10 $posts }}
+
+            {{ partial "post-preview.html" . }}
+
+        {{ end }}
+
+    </div>
+
+</section>
+
+{{ end }}

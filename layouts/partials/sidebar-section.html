@@ -1,0 +1,57 @@
+{{ $section := .section }}
+{{ $current := .current }}
+
+{{ $isCurrent := eq $current $section }}
+{{ $isAncestor := $current.IsDescendant $section }}
+{{ $isOpen := or $isCurrent $isAncestor }}
+
+<li class="{{ if $isOpen }}category-open{{ end }}">
+
+    {{ if $section.Sections }}
+
+        <button
+            type="button"
+            class="category-toggle"
+            aria-expanded="{{ if $isOpen }}true{{ else }}false{{ end }}">
+
+            <span class="category-arrow">›</span>
+
+            <span class="category-name">
+                {{ $section.Title }}
+            </span>
+
+        </button>
+
+    {{ else }}
+
+        <a
+            href="{{ $section.RelPermalink }}"
+            class="category-link {{ if $isCurrent }}category-current{{ end }}">
+
+            <span class="category-name">
+                {{ $section.Title }}
+            </span>
+
+        </a>
+
+    {{ end }}
+
+
+    {{ if $section.Sections }}
+
+        <ul class="subcategory-list">
+
+            {{ range $section.Sections }}
+
+                {{ partial "sidebar-section.html" (dict
+                    "section" .
+                    "current" $current
+                ) }}
+
+            {{ end }}
+
+        </ul>
+
+    {{ end }}
+
+</li>

@@ -1,0 +1,9 @@
+<div class="sidebar-section">
+    <h3>Categories</h3>
+
+    <ul class="category-list">
+        {{ range site.Sections }}
+            {{ partial "sidebar-section.html" (dict "section" . "current" $.current) }}
+        {{ end }}
+    </ul>
+</div>

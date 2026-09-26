@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+<header class="page-header">
+    <h1>Archive</h1>
+    <p>All blog posts sorted by year and month.</p>
+</header>
+
+<section class="archive">
+
+    {{ $posts := where site.RegularPages "Type" "post" }}
+
+    {{ range $posts.GroupByDate "2006" }}
+        <section class="archive-year">
+
+            <h2>{{ .Key }}</h2>
+
+            {{ range .Pages.GroupByDate "01" }}
+                <div class="archive-month">
+
+                    <h3>
+                        {{ if eq .Key "01" }}January
+                        {{ else if eq .Key "02" }}February
+                        {{ else if eq .Key "03" }}March
+                        {{ else if eq .Key "04" }}April
+                        {{ else if eq .Key "05" }}May
+                        {{ else if eq .Key "06" }}June
+                        {{ else if eq .Key "07" }}July
+                        {{ else if eq .Key "08" }}August
+                        {{ else if eq .Key "09" }}September
+                        {{ else if eq .Key "10" }}October
+                        {{ else if eq .Key "11" }}November
+                        {{ else if eq .Key "12" }}December
+                        {{ end }}
+                    </h3>
+
+                    <ul class="archive-posts">
+                        {{ range .Pages }}
+                            <li>
+                                <time datetime="{{ .Date.Format "2006-01-02" }}">
+                                    {{ .Date.Format "02.01." }}
+                                </time>
+
+                                <a href="{{ .RelPermalink }}">
+                                    {{ .Title }}
+                                </a>
+                            </li>
+                        {{ end }}
+                    </ul>
+
+                </div>
+            {{ end }}
+
+        </section>
+    {{ end }}
+
+</section>
+
+{{ end }}

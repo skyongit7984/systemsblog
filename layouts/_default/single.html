@@ -1,0 +1,91 @@
+{{ define "main" }}
+
+<article class="single-post">
+
+    <div class="article-window">
+
+        <header class="article-titlebar">
+
+            <div class="window-controls">
+                <span></span>
+                <span></span>
+            </div>
+
+            <span class="article-window-title">
+                {{ .Title }}
+            </span>
+
+        </header>
+
+
+        <div class="article-paper">
+
+            <div class="article-meta">
+
+                <time datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ .Date.Format "02.01.2006" }}
+                </time>
+
+                {{ with .Params.categories }}
+
+                    <span class="meta-divider">•</span>
+
+                    {{ range . }}
+
+                        <a href="{{ "/categories/" | relURL }}{{ . | urlize }}/">
+                            {{ . }}
+                        </a>
+
+                    {{ end }}
+
+                {{ end }}
+
+            </div>
+
+
+            <h1>
+                {{ .Title }}
+            </h1>
+
+
+            {{ with .Params.description }}
+
+                <p class="article-lead">
+                    {{ . }}
+                </p>
+
+            {{ end }}
+
+
+            <div class="article-content">
+
+                {{ .Content }}
+
+            </div>
+
+
+            {{ with .Params.categories }}
+
+                <footer class="article-footer">
+
+                    <strong>Categories:</strong>
+
+                    {{ range . }}
+
+                        <a href="{{ "/categories/" | relURL }}{{ . | urlize }}/">
+                            {{ . }}
+                        </a>
+
+                    {{ end }}
+
+                </footer>
+
+            {{ end }}
+
+        </div>
+
+    </div>
+
+</article>
+
+{{ end }}

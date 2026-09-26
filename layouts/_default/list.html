@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+<header class="page-header">
+
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Content }}
+        <div class="page-description">
+            {{ . }}
+        </div>
+    {{ end }}
+
+</header>
+
+<section class="post-list">
+
+    {{ if eq .Section "blog" }}
+
+        {{ $posts := where site.RegularPages "Type" "post" }}
+
+        {{ if $posts }}
+
+            {{ range $posts.ByDate.Reverse }}
+
+                {{ partial "post-preview.html" . }}
+
+            {{ end }}
+
+        {{ else }}
+
+            <p class="empty-section">
+                Oh, there are no posts yet... Come back later!
+            </p>
+
+        {{ end }}
+
+    {{ else }}
+
+        {{ $posts := .RegularPages }}
+
+        {{ if $posts }}
+
+            {{ range $posts.ByDate.Reverse }}
+
+                {{ partial "post-preview.html" . }}
+
+            {{ end }}
+
+        {{ else }}
+
+            <p class="empty-section">
+                Oh, there are no posts yet... Come back later!
+            </p>
+
+        {{ end }}
+
+    {{ end }}
+
+</section>
+
+{{ end }}

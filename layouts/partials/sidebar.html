@@ -1,0 +1,130 @@
+<div class="sidebar-inner">
+
+    <!-- Mobile title bar -->
+    <div class="mobile-menu-bar">
+
+        <div class="site-logo">
+            <a href="/">
+                {{ .Site.Title }}
+            </a>
+        </div>
+
+        <button
+            class="mobile-menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-navigation"
+            aria-label="Open menu">
+            ☰
+        </button>
+
+    </div>
+
+
+    <!-- Navigation -->
+    <div id="mobile-navigation" class="mobile-navigation">
+
+        <p class="site-description">
+            {{ .Site.Params.description }}
+        </p>
+
+        <nav class="main-navigation">
+
+            <a href="/blog/">
+                Blog
+            </a>
+
+            <a href="/about-us/">
+                About us
+            </a>
+
+            <a href="/archive/">
+                Archive
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-section">
+
+            <ul class="category-list">
+
+                {{ partial "sidebar-sections.html" (dict "current" .CurrentSection) }}
+
+            </ul>
+
+        </div>
+
+
+        <div class="sidebar-footer">
+
+            <nav class="footer-nav">
+
+                <a href="{{ "disclaimer/" | relURL }}">
+                    Disclaimer
+                </a>
+
+            </nav>
+
+            <p class="footer-copyright">
+                © {{ now.Year }}
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    /* Mobile-Menu */
+
+    const menuButton = document.querySelector('.mobile-menu-toggle');
+    const navigation = document.querySelector('.mobile-navigation');
+
+    if (menuButton && navigation) {
+
+        menuButton.addEventListener('click', function () {
+
+            const isOpen = navigation.classList.toggle('is-open');
+
+            menuButton.setAttribute(
+                'aria-expanded',
+                isOpen ? 'true' : 'false'
+            );
+
+            menuButton.setAttribute(
+                'aria-label',
+                isOpen ? 'Close menu' : 'Open menu'
+            );
+
+            menuButton.textContent = isOpen ? '✕' : '☰';
+
+        });
+
+    }
+
+    // Sections
+
+    document.querySelectorAll('.category-toggle').forEach(function(button) {
+
+        button.addEventListener('click', function() {
+
+            const item = this.closest('li');
+
+            const isOpen = item.classList.toggle('category-open');
+
+            this.setAttribute(
+                'aria-expanded',
+                isOpen ? 'true' : 'false'
+            );
+
+        });
+
+    });
+
+});
+</script>

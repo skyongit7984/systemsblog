@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {{ if .Title }}
+            {{ .Title }} | {{ .Site.Title }}
+        {{ else }}
+            {{ .Site.Title }}
+        {{ end }}
+    </title>
+
+    <meta name="description" content="{{ .Site.Params.description }}">
+
+   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+
+<body class="{{ if .IsHome }}home{{ else if eq .Type "post" }}post-page{{ else }}{{ .Kind }}{{ end }}">
+
+<div class="site-wrapper">
+
+    <div class="site-layout">
+
+        <aside class="sidebar">
+            {{ partial "sidebar.html" . }}
+        </aside>
+
+        <main class="main-content">
+
+            <div class="content-feed">
+                {{ block "main" . }}{{ end }}
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+</html>
