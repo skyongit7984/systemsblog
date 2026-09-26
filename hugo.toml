@@ -9,3 +9,7 @@ author = "Lavalamp System"
 [taxonomies]
 category = "categories"
 tag = "tags"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
