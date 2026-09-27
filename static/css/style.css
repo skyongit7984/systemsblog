@@ -27,12 +27,12 @@ Made by Victoria Drake
 
 @font-face {
     font-family: Macintosh;
-    src: url(/fonts/mac.ttf);
+    src: url(/systemsblog/fonts/mac.ttf);
 }
 
 @font-face {
     font-family: JetBrains Mono;
-    src: url("/fonts/JetBrainsMono-Regular.ttf");
+    src: url(/systemsblog/fonts/JetBrainsMono-Regular.ttf);
 }
 
 
