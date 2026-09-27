@@ -639,7 +639,7 @@ body {
 
     color: #666;
 
- font-family: "JetBrains Mono";
+ font-family: JetBrains Mono;
 
     font-size: 12px;
 }
@@ -687,7 +687,7 @@ body {
 .article-content {
     color: #222;
 
-   font-family: "JetBrains Mono";
+   font-family: JetBrains Mono;
 
     font-size: 1.08rem;
 
@@ -702,7 +702,7 @@ body {
 
     color: #111;
 
-   font-family: "JetBrains Mono";
+   font-family: JetBrains Mono;
 
     font-size: 1.5rem;
 
@@ -713,7 +713,7 @@ body {
 .article-content h3 {
     margin-top: 35px;
 
-   font-family: "JetBrains Mono";
+   font-family: JetBrains Mono;
 
     font-size: 1.2rem;
 }
@@ -818,7 +818,7 @@ body {
 
     color: #666;
 
-    font-family: "JetBrains Mono";
+    font-family: JetBrains Mono;
 
     font-size: 12px;
 }
@@ -864,7 +864,7 @@ body {
 .archive-month h3 {
     margin: 0 0 8px;
     color: #555;
-    font-family: "JetBrains Mono", monospace;
+    font-family: JetBrains Mono, monospace;
     font-size: 14px;
 }
 
@@ -879,7 +879,7 @@ body {
     gap: 15px;
     padding: 7px 0;
     border-bottom: 1px dotted #aaa;
-    font-family: "JetBrains Mono", monospace;
+    font-family: JetBrains Mono, monospace;
     font-size: 13px;
 }
 
