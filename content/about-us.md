@@ -31,3 +31,6 @@ Looking back I think it's kind of funny how at first, I didn't know I was deeply
 (As I am writing this, I suddenly hear ringing in my ears, panic is rising in my chest, and I fell lightheaded. Guess I am onto something here.)
 
 With patience, we found at least two other system members. This is still an ongoing process but we haven't found other parts in many months so... I guess there's four of us!
+
+### Pronouns
+We just use what feels right in the moment. Sometimes it feels important to highlight our distinctness and "we" fits best, sometimes I feel like talking from what many in the community like to call "the persistent I".
