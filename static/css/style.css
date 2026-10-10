@@ -2,7 +2,7 @@
 Made by Victoria Drake
 */
 
-@media (prefers-color-scheme: light) {
+/*@media (prefers-color-scheme: light) {
      :root {
         --color-bg: linear-gradient(0deg, #f470de, #9de6f9);
         --item-bg: #f5f5f5;
@@ -16,7 +16,7 @@ Made by Victoria Drake
         --item-bg: #373f47;
         --accent: teal;
     }
-}
+} */
 
 :root {
     --shadow-shape: 5px 5px;
@@ -1229,7 +1229,7 @@ body {
         gap: 8px;
         font-size: 13px;
     }
-}
+} 
 
 @media (max-width: 480px) {
 
