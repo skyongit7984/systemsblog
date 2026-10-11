@@ -18,7 +18,7 @@
    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
 
-<body class="{{ if .IsHome }}home{{ else if eq .Type "post" }}post-page{{ else }}{{ .Kind }}{{ end }}">
+<body class="{{ if .IsHome }}home{{ else }}{{ .Kind }}{{ end }}">
 
 <div class="site-wrapper">
 

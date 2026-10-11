@@ -2,7 +2,7 @@
 Made by Victoria Drake
 */
 
-@media (prefers-color-scheme: light) {
+/*@media (prefers-color-scheme: light) {
      :root {
         --color-bg: linear-gradient(0deg, #f470de, #9de6f9);
         --item-bg: #f5f5f5;
@@ -16,13 +16,23 @@ Made by Victoria Drake
         --item-bg: #373f47;
         --accent: teal;
     }
-}
+}*/
 
 :root {
+    --color-bg: linear-gradient(0deg, #f470de, #9de6f9);
+    --item-bg: #f5f5f5;
+    --accent: #f21cf1;
     --shadow-shape: 5px 5px;
     --color-shadow: rgba(0, 0, 0, .2);
     --border-radius: 0;
     --mac-border: 2px solid black;
+    --sidebar: #f5f5f5;
+    --text: #222222;
+    --muted: #777777;
+    --border: #dddddd;
+    --accent: #3157d5;
+    --sidebar-width: 280px;
+    --content-width: 850px;
 }
 
 @font-face {
@@ -36,7 +46,7 @@ Made by Victoria Drake
 }
 
 
-:root {
+/*:root {
     --background: #ffffff;
     --sidebar: #f5f5f5;
     --text: #222222;
@@ -46,7 +56,7 @@ Made by Victoria Drake
 
     --sidebar-width: 280px;
     --content-width: 850px;
-}
+}*/
 
 
 * {
@@ -54,9 +64,6 @@ Made by Victoria Drake
 }
 
 
-html {
-    scroll-behavior: smooth;
-}
 
 
 body {
@@ -80,15 +87,13 @@ body {
 }
 
 .site-layout {
-    display: grid;
+  display: grid;
 
     grid-template-columns:
         var(--sidebar-width)
         minmax(0, var(--content-width));
 
-    flex: 1 1 auto;
-
-    min-height: 0;
+    min-height: 100vh;
 
     max-width: 1250px;
     width: 100%;
@@ -102,26 +107,30 @@ body {
    ========================= */
 
 .sidebar {
-    background: var(--sidebar);
+      position: fixed;
 
+    top: 0;
+    left: max(0px, calc((100vw - 1250px) / 2));
+
+    width: var(--sidebar-width);
+    height: 100vh;
+
+    overflow-y: auto;
+
+    background: var(--sidebar);
     border-right: 1px solid var(--border);
+
+    z-index: 100;
 }
 
 
 .sidebar-inner {
-    position: sticky;
-
-    top: 0;
-
-    height: 100%;
+  min-height: 100%;
 
     padding: 40px 30px;
 
     display: flex;
-
     flex-direction: column;
-
-    overflow-y: auto;
 }
 
 .site-logo {
@@ -272,12 +281,15 @@ body {
 }
 
 .main-content {
+    grid-column: 2;
+
     min-width: 0;
-    min-height: 0;
+    height: 100vh;
 
     padding: 60px 70px;
 
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .content-feed {
@@ -464,7 +476,11 @@ body {
 
 
 .post-card-content p {
-    margin: 0 0 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .post-card-link {
@@ -499,66 +515,6 @@ body {
         inset 1px 1px 0 #888;
 }
 
-.post-page {
-    height: 100vh;
-    overflow: hidden;
-}
-
-.post-page .site-wrapper {
-    height: 100vh;
-    min-height: 0;
-
-    overflow: hidden;
-}
-
-.post-page .site-layout {
-    min-height: 0;
-    overflow: hidden;
-}
-
-.post-page .main-content {
-    min-height: 0;
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.post-page .content-feed {
-    min-height: 0;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.post-page .single-post {
-    min-height: 0;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.post-page .article-window {
-    min-height: 0;
-
-    flex: 1 1 auto;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.post-page .article-paper {
-    min-height: 0;
-
-    flex: 1 1 auto;
-
-    overflow-y: auto;
-    overflow-x: hidden;
-
-    padding-right: 15px;
-}
 
 .article-window {
     border: 2px solid #333;
@@ -987,8 +943,8 @@ body {
 @media (max-width: 800px) {
 
     /* =========================
-       Basic layout
-       ========================= */
+     *     Basic layout
+     *     ========================= */
 
     html {
         scroll-behavior: smooth;
@@ -1014,8 +970,8 @@ body {
 
 
     /* =========================
-       Sidebar / Navigation
-       ========================= */
+     *     Sidebar / Navigation
+     *     ========================= */
 
     .sidebar {
         width: 100%;
@@ -1023,12 +979,9 @@ body {
         border-bottom: 1px solid var(--border);
     }
 
-    .sidebar-inner {
-        position: static;
+   .sidebar-inner {
+        padding: 12px 15px;
         height: auto;
-        max-height: none;
-        padding: 15px 18px;
-        overflow: visible;
     }
 
     .site-title {
@@ -1039,10 +992,18 @@ body {
         font-size: 24px;
     }
 
+       /* Sidebar Footer */
+
+    .mobile-navigation .sidebar-footer {
+        margin-top: 25px;
+        padding-top: 15px;
+        border-top: 1px solid var(--border);
+    }
+
 
     /* =========================
-       Main content
-       ========================= */
+     *     Main content
+     *     ========================= */
 
     .main-content {
         width: 100%;
@@ -1114,8 +1075,8 @@ body {
 
 
     /* =========================
-       Article titlebar
-       ========================= */
+     *     Article titlebar
+     *     ========================= */
 
     .article-titlebar {
         min-height: 30px;
@@ -1131,8 +1092,8 @@ body {
 
 
     /* =========================
-       Article
-       ========================= */
+     *     Article
+     *     ========================= */
 
     .article-paper h1 {
         font-size: 28px;
@@ -1161,8 +1122,8 @@ body {
 
 
     /* =========================
-       Images
-       ========================= */
+     *     Images
+     *     ========================= */
 
     .article-content img {
         display: block;
@@ -1173,8 +1134,8 @@ body {
 
 
     /* =========================
-       Code
-       ========================= */
+     *     Code
+     *     ========================= */
 
     .article-content pre {
         max-width: 100%;
@@ -1190,8 +1151,8 @@ body {
 
 
     /* =========================
-       Tables
-       ========================= */
+     *     Tables
+     *     ========================= */
 
     .article-content table {
         display: block;
@@ -1202,8 +1163,8 @@ body {
 
 
     /* =========================
-       Homepage
-       ========================= */
+     *     Homepage
+     *     ========================= */
 
     .latest-posts {
         width: 100%;
@@ -1217,8 +1178,8 @@ body {
 
 
     /* =========================
-       Footer
-       ========================= */
+     *     Footer
+     *     ========================= */
 
     .site-footer {
         height: 36px;
@@ -1229,65 +1190,6 @@ body {
         gap: 8px;
         font-size: 13px;
     }
-} 
-
-@media (max-width: 480px) {
-
-    body {
-        font-size: 17px !important;
-    }
-
-    .main-content {
-        padding: 18px 10px 30px;
-    }
-
-    .article-paper {
-        padding: 20px 15px;
-    }
-
-    .article-paper h1 {
-        font-size: 25px;
-    }
-
-    .article-titlebar {
-        font-size: 15px;
-    }
-
-    .article-content pre {
-        font-size: 13px;
-    }
-
-    .footer-nav {
-        font-size: 12px;
-        gap: 6px;
-    }
-}
-
-/* =========================================
-   Mobile Menu turned off on pc
-   ========================================= */
-
-.mobile-menu-bar {
-    display: none;
-}
-
-.mobile-navigation {
-    display: block;
-}
-
-
-/* =========================================
-   Mobile
-   ========================================= */
-
-@media (max-width: 800px) {
-
-    .sidebar-inner {
-        padding: 12px 15px;
-        height: auto;
-    }
-
-    /* title bar */
 
     .mobile-menu-bar {
         display: flex;
@@ -1379,14 +1281,50 @@ body {
     .mobile-navigation .sidebar-section {
         margin-top: 10px;
     }
+}
 
 
-    /* Sidebar Footer */
+@media (max-width: 480px) {
 
-    .mobile-navigation .sidebar-footer {
-        margin-top: 25px;
-        padding-top: 15px;
-        border-top: 1px solid var(--border);
+    body {
+        font-size: 17px !important;
     }
 
+    .main-content {
+        padding: 18px 10px 30px;
+    }
+
+    .article-paper {
+        padding: 20px 15px;
+    }
+
+    .article-paper h1 {
+        font-size: 25px;
+    }
+
+    .article-titlebar {
+        font-size: 15px;
+    }
+
+    .article-content pre {
+        font-size: 13px;
+    }
+
+    .footer-nav {
+        font-size: 12px;
+        gap: 6px;
+    }
 }
+
+/* =========================================
+   Mobile Menu turned off on pc
+   ========================================= */
+
+.mobile-menu-bar {
+    display: none;
+}
+
+.mobile-navigation {
+    display: block;
+}
+
