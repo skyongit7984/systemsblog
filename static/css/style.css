@@ -1316,15 +1316,71 @@ body {
     }
 }
 
-/* =========================================
-   Mobile Menu turned off on pc
-   ========================================= */
-
+/* Desktop: normal layout */
 .mobile-menu-bar {
     display: none;
 }
 
 .mobile-navigation {
     display: block;
+}
+
+/* Mobile: menu can be opened and closed*/
+@media (max-width: 800px) {
+
+    .mobile-menu-bar {
+        display: flex;
+         background: #e5e5e5;
+    border: 2px solid #333;
+    padding: 6px 8px;
+      position: sticky;
+    top: 0;
+    z-index: 1001;
+    border-bottom: 2px solid #333;
+    }
+
+    .mobile-navigation {
+        display: none;
+    }
+
+    .mobile-navigation.is-open {
+            display: block;
+    background: #e5e5e5;
+    border: 2px solid #333;
+    border-top: none;
+    padding: 15px;
+    }
+
+      .sidebar {
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    background: transparent;
+    border: none;
+      position: sticky;
+    top: 0;
+    left: auto;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    background: transparent;
+    overflow: visible;
+  }
+
+  .sidebar-inner {
+    min-height: 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  .site-logo {
+    display: none;
+  }
+
+   .site-description {
+    display: none;
+  }
+
+
 }
 
