@@ -7,16 +7,28 @@ draft: false
 
 Our syscovery started around February this year, but figuring out how our system works is still an ongoing process and probably will be for quite some time. The number one thing we struggle with is denial and believing ourselves. (Or to be more precise, it is our Little One)
 When we had the first "more than one" experience, we had only ever heard of DID, and it was always portrayed as this exotic, rare, and overt disorder. This wasn't what we experienced at all. Then we discovered the Plural Community, and while they are much more welcoming of experiences outside the medical model of dissociation, there are still certain "molds" you have to fit into to be able to relate with other plurals in those communities, which is simply not the case for us. Does that mean we are not plural? Absolutely not! Consider the following question:
+
 Is it helpful for you to apply the framework of plurality to your lived experiences? Do you feel and function better? Is it a relief (at least some of the time)? Do you want to be plural? Great, go ahead and call yourself plural! You are certainly not taking anything away from others by doing so. Plurality is not a limited resource that could be taken away from those who "actually need it". So, if you want to, if you have headmates, if it helps, join the table. 
 Now what do you do if that doesn't help? 
+
+
 Doubt is common amongst plural folks. So common in fact it could be listed as a sign of being plural. For us tho, it was all consuming. We came to realize that hey, maybe one headmate in here has OCD and the doubts are their intrusion. (My partner added here that they first suspected we have OCD. Thank you :)) ) I will explain what helps our system deal with the OCD, and if those techniques help with that, they will certainly help with plain, "normal" doubt. (no invalidation here, doubt alone is already hard to deal with)
 OCD is fueled by feelings that are overwhelming to you. Basically, control by obsessive behaviour becomes your (dysfunctional) way to cope. So you have to regulate the underlying emotions a healthy way. The techniques I will describe are also pivotal to trauma healing, so maybe you are already doing the right things. 
+
+
 Basically you have to widen your window of tolerance. The window of tolerance is the emotional bandwidth of feelings you can handle, wether positive or negative. When you are in the window, you are regulated. You don't feel overwhelmed, and even if the feelings are negative, Life overall seems okay, the world is okay generally, and you have access to other resources. If you are outside of the window you are dysregulated. Life is shit, dangerous, unsafe. You feel like you are in danger, or that nothing matters, or that nothing will ever be okay again. Basically when you are out of balance and overwhelmed, that's when you have left the window. 
+
+
 You need to learn to handle emotions that are currently outside of personal window of tolerance. You can do that by noticing when you are not present, returning back to the present by identifying and naming what you are feeling, and then simply keep on noticing it without reacting to it much. Notice where and how you feel it in your body. The only reaction should be validation and comfort. 
+
+
 Maybe after a while you will be able to stay in tune with yourselves for longer and see more clearly what it is that makes you dissociate (by reacting to your feelings with OCD behaviour). For me it is actually a flashback to early childhood where expressing any sort of feelings and needs, but especially needing to be loved, valued, comforted and cared for, meant being assaulted by pure rage and hatred. And we internalized that and did the same to ourselves. Once you uncover the actual root of the flashback and therefore the reason for the OCD compulsions, you can finally work on the root cause. 
 But contrarily, something we had to learn is that you shouldnt wait for the OCD to be cured or fixed one day, and then you can finally start living. It is more something you have to manage and live with, so you should learn to live around it. Some days you will feel like you never had OCD, other days are bad. What helps is keeping in mind you are not fighting the headmate that has OCD, you are all in this together against the compulsions. Be sure to stay compassionate. The OCD is a mechanism to survive and protect. Honor that. 
+
 Also, OCD tries to tell you the complusions is super duper important and if you don't pay attention to it NOW something terrible will happen. Understanding that is how OCD operates and nothing scary will happen in reality weakens its grip over you. 
 Some real life examples from us;
+
+
 Our Little one is the one carrying OCD. She carries our early childhood trauma and thus is terrified of just life in general. Other people are very very scary and will harm you and do bad things that hurt you. Her underlying fears that fuel her OCD are the following:
 - She wants to be seen as a separate person but isn't allowed to be that/to just exist
 - She wants to be separate but the implications of being plural are scary. How will other people react? Will she not be loved? Is something wrong with her, or us?
