@@ -1,6 +1,6 @@
 
 ## The Classics
-Those are usually the first links you find on any plural website. These are classics for a reason.
+Those are usually the first links you find on any plural website. Classics for a reason.
 
 https://morethanone.info 
 
