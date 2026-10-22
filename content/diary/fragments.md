@@ -1,0 +1,6 @@
+The last days were Crazy. We had an intense therapy Session and discussion with our Partner and - something profound changed. Up until now our Little One carried a big amount of trauma memories and fear and ocd. And suddenly those… didn’t belong to her anymore? They flottes around in our mind as a Fragment, Belohnung to no one. This was and is a profound change in our internal structure and selves understanding. Our Little One (and in Extension we all) Battle with these memories and emotions for so Long and now she can just be. And sleep. And get the rest she deserves. 
+Well that Fragment isn’t gone though. I am still tending to it like i did to our little one. 
+I think This is a Great sign. Our Psyche felt safe enough to let go of it to an extent. 
+I am calling it a Fragment because it has no sense of self, mostly Communication through images and feeling and only rudimentary Language and because it only Contains a certain set of memories and feelings associated. 
+The way I have to handle this Fragment is similar but also quite different than when it was still attached to out little one. I still have to sorge it and care for it. But it no longer plagues her like a demon, like miasma. I Can communicate with it directly. 
+Through this direct Access it showed me it’s core, basically. 
