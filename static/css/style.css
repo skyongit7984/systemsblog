@@ -939,7 +939,7 @@ body {
 
 .post-feed {
     max-height: 600px;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
     padding-right: 15px;
 }
 

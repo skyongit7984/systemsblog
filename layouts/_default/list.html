@@ -20,7 +20,7 @@
 
         {{ if $posts }}
 
-            {{ range $posts.ByDate.Reverse }}
+            {{ range $posts.ByDate }}
 
                 {{ partial "post-preview.html" . }}
 
@@ -40,7 +40,7 @@
 
         {{ if $posts }}
 
-            {{ range $posts.ByDate.Reverse }}
+            {{ range $posts.ByDate }}
 
                 {{ partial "post-preview.html" . }}
 

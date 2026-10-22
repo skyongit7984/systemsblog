@@ -26,20 +26,6 @@
                     {{ .Date.Format "02.01.2006" }}
                 </time>
 
-                {{ with .Params.categories }}
-
-                    <span class="meta-divider">•</span>
-
-                    {{ range . }}
-
-                        <a href="{{ "/categories/" | relURL }}{{ . | urlize }}/">
-                            {{ . }}
-                        </a>
-
-                    {{ end }}
-
-                {{ end }}
-
             </div>
 
 
@@ -63,26 +49,16 @@
 
             </div>
 
+            <footer class="article-footer">
+                 {{ with .CurrentSection }}
 
-            {{ with .Params.categories }}
+                <strong>Categories: <a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
 
-                <footer class="article-footer">
+                {{ end }}
 
-                    <strong>Categories:</strong>
+            </footer>
 
-                    {{ range . }}
-
-                        <a href="{{ "/categories/" | relURL }}{{ . | urlize }}/">
-                            {{ . }}
-                        </a>
-
-                    {{ end }}
-
-                </footer>
-
-            {{ end }}
-
-        </div>
+</div>
 
     </div>
 
