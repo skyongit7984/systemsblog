@@ -1,3 +1,8 @@
+--- 
+title: "Multiplicity" 
+date: 2026-09-22 
+draft: false 
+---
 
 ## The Classics
 Those are usually the first links you find on any plural website. Classics for a reason.
