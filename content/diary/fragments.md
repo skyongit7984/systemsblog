@@ -1,6 +1,6 @@
 ---
 title: "Update: What the hell is going onnnn"
-date: 2026-09-27
+date: 2026-10-22
 type: post
 draft: false
 ---

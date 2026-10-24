@@ -52,7 +52,16 @@
             <footer class="article-footer">
                  {{ with .CurrentSection }}
 
-                <strong>Categories: <a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+                <strong>Category: <a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+
+                {{ end }}
+
+                {{ $published := .PublishDate | time.Format ":date_medium"}}
+                {{ $modified := .Lastmod | time.Format ":date_medium"}}
+
+                {{ if ne $published $modified }}
+
+                <strong>Last updated: {{ $modified }}</strong>
 
                 {{ end }}
 

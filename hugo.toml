@@ -1,6 +1,7 @@
 baseURL = "https://www.lavalampsystem.com/"
 languageCode = "en-US"
 title = "The Lavalamp System"
+enableGitInfo = true
 
 [params]
 description = "Reflections and essays on plurality"

@@ -477,11 +477,8 @@ body {
     font-size: 20px;
 
     line-height: 1.65;
-}
 
-
-.post-card-content p {
-    display: -webkit-box;
+     display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 3;
     -webkit-box-orient: vertical;
