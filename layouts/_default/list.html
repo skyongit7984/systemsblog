@@ -17,13 +17,13 @@
     {{ if eq .Section "blog" }}
 
         {{ $posts := where site.RegularPages "Type" "post" }}
+        {{ $posts = $posts.ByDate.Reverse }}
+        {{ $paginator := .Paginate $posts 6 }}
 
-        {{ if $posts }}
+        {{ if $paginator.Pages }}
 
-            {{ range $posts.ByDate.Reverse }}
-
+            {{ range $paginator.Pages }}
                 {{ partial "post-preview.html" . }}
-
             {{ end }}
 
         {{ else }}
@@ -36,14 +36,13 @@
 
     {{ else }}
 
-        {{ $posts := .RegularPages }}
+        {{ $posts := .RegularPagesRecursive.ByDate.Reverse }}
+        {{ $paginator := .Paginate $posts 6 }}
 
-        {{ if $posts }}
+        {{ if $paginator.Pages }}
 
-            {{ range $posts.ByDate.Reverse }}
-
+            {{ range $paginator.Pages }}
                 {{ partial "post-preview.html" . }}
-
             {{ end }}
 
         {{ else }}
@@ -57,5 +56,7 @@
     {{ end }}
 
 </section>
+
+{{ template "_internal/pagination.html" . }}
 
 {{ end }}

@@ -485,6 +485,17 @@ body {
     overflow: hidden;
 }
 
+/*.post-card-content p,
+.post-card-content h1,
+.post-card-content h2,
+.post-card-content h3 {
+     display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}*/
+
 .post-card-link {
     display: inline-block;
 
@@ -683,14 +694,14 @@ body {
 
 
 .article-content a {
-    color: #3157d5;
+    color: #db38c0;
 
     text-decoration: underline;
 }
 
 
 .article-content a:hover {
-    color: #1d3795;
+    color: #af2a99;
 }
 
 .article-content ul,
@@ -938,6 +949,103 @@ body {
     max-height: 600px;
     /*overflow-y: auto;*/
     padding-right: 15px;
+}
+
+/* Retro Macintosh Pagination */
+
+.pagination-default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 40px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination-default li {
+    margin: 0;
+    padding: 0;
+}
+
+.pagination-default a,
+.pagination-default span {
+    display: block;
+    min-width: 36px;
+    padding: 8px 12px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+    color: #111;
+    background: #f5f5f5;
+    border: 2px solid #333;
+    box-shadow: 2px 2px 0 #333;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Hover */
+.pagination-default a:hover {
+    background: #dedede;
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 #333;
+}
+
+/* Current page */
+.pagination-default .active a,
+.pagination-default .active span,
+.pagination-default li.active a,
+.pagination-default li.active span {
+    background: #333;
+    color: #fff;
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+/* Disabled Buttons */
+.pagination-default .disabled a,
+.pagination-default .disabled span {
+    color: #999;
+    background: #e5e5e5;
+    box-shadow: none;
+    cursor: default;
+}
+
+/* all arrow pagination buttons without box and background*/
+.pagination-default a[aria-label*="First"],
+.pagination-default a[aria-label*="Previous"],
+.pagination-default a[aria-label*="Next"],
+.pagination-default a[aria-label*="Last"] {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+/* disbale hover effect for arrow buttons*/
+.pagination-default a[aria-label*="First"]:hover,
+.pagination-default a[aria-label*="Previous"]:hover,
+.pagination-default a[aria-label*="Next"]:hover,
+.pagination-default a[aria-label*="Last"]:hover {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    transform: none;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .pagination-default {
+        gap: 5px;
+        margin: 25px 0;
+    }
+
+    .pagination-default a,
+    .pagination-default span {
+        min-width: 32px;
+        padding: 7px 9px;
+        font-size: 13px;
+    }
 }
 
 /* MOBILE */
@@ -1351,6 +1459,10 @@ body {
     border: 2px solid #333;
     border-top: none;
     padding: 15px;
+    }
+
+    .mobile-navigation.is-open .site-logo {
+            display: none;
     }
 
       .sidebar {
