@@ -24,7 +24,7 @@
 
         {{ $posts := where site.RegularPages "Type" "post" }}
 
-        {{ range first 10 $posts.ByDate.Reverse }}
+        {{ range first 4 $posts.ByDate.Reverse }}
 
             {{ partial "post-preview.html" . }}
 

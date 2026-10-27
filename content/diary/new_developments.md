@@ -1,0 +1,16 @@
+---
+title: "New developments with the Fragment"
+date: 2026-10-27
+type: post
+---
+In the [last post]({{<relref "fragments">}}) I talked about some recent changes in the system. I am still working on managing OCD and anxiety with the Fragment and I feel like we have made good progress, especially the anxiety has subsided quite a bit, which is amazing. As stated in the last post our Little One has suffered immensely and now she doesn't have to deal with that anymore, at least not more than the rest of us. What I noticed is that she seemed way younger. She does that sometimes, so I wasn't concerned. Now I believe that what I thought was our Little One behaving a little younger is a new headmate? Because suddenly she didn't respond to "her" usual name anymore and a lot of the memories that she carries seemed unfamiliar to "her" all of a sudden. So turns out there's a new child in our system from my current understanding. I tried reaching out to the former child headmate and there she was, confused and exhausted from the last weeks. I didn't realize I wasn't talking to her all this time after the Fragment split off. I am now trying to calm her and explain what happened.
+
+I am confused as well what _exactly_ happened though. Maybe a part of her split off along with the Fragment, forming a new headmate? Maybe there was no splitting and that headmate has been there all along, waiting to be discovered. Maybe the new child headmate is sort of like a younger mirror image of our "first" child headmate?
+
+I am also slowly processing the reality of being a system. The last months have been filled with doubt, obsessing over every little detail, wondering if it could even be true. Maybe we are all just making it up? Maybe it was a temporary thing? Maybe these experiences meant something else entirely? Now that these doubts have become less and less, and the inital euphoria of finally not fighting what we experience has waned, the sobering reality set in. And it feels like a big "oh shit". Like, being a system is hard. _Really_ hard. Systems are stigmatized in society. I complained about feeling isolated with CPTSD, aaand now it got worse. Will my partner still want to be in a relationship with... _us_? Should I tell my family? Should I even tell anyone, ever? Buuuut I didn't want to hide my PTSD anymore!! Wtf. What should I do? With leading experts in the field strongly advising against telling your workplace, family and friends?
+
+And what a shock internally. Have I been hurting my headmates by not acknowledging their existence, their realness? (__Yes__) Have I left them alone too many times when they needed help, telling myself: It's all fake anyway? 
+
+Ok, well now everyone in here understands we're all real. Shit. Shit! Everyone deserves to live their life, to have their time out, to fulfill their dreams, to heal from the past. Again: How will other people react to all of this?
+
+Safe to say there's a lot going on at the moment. I have talked at length with my/our partner about all of this and we're all committed. I will forever be grateful for everything they have done for us. Truly, we wouldn't have survived without them. We love you <3
